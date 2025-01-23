@@ -1,0 +1,516 @@
+/* Layout principal */
+.app {
+  display: flex;
+}
+main {
+  margin-left: 200px; /* Adiciona espaço para a sidebar */
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #1a1919; /* Fundo do conteúdo */
+  color: white;
+  min-height: 100vh; /* Garante que o conteúdo preencha toda a tela */
+  box-sizing: border-box; /* Inclui padding no cálculo de largura/altura */
+}
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #333; /* Cor de fundo da sidebar */
+  color: white;
+  height: 100vh; /* Preenche toda a altura da tela */
+  position: fixed; /* Fixa a sidebar na lateral */
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o ícone e o texto */
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #4CAF50; /* Cor ao passar o mouse */
+  transform: scale(1.05); /* Efeito de aumento */
+}
+
+.sidebar nav ul li a i {
+  font-size: 20px; /* Tamanho do ícone */
+}
+
+.sidebar nav ul li a.active {
+  background-color: #4CAF50; /* Cor de fundo para o item ativo */
+  transform: scale(1.05); /* Realce */
+}
+.sidebar nav ul li a {
+  transition: all 0.3s ease-in-out;
+}
+
+.content {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Conteúdo Principal */
+
+  .content {
+    margin-left: 200px; /* Espaço suficiente para a sidebar */
+    padding: 20px;
+    background-color: #0A0404;
+    color: white;
+    min-height: 100vh; /* Preenche a altura da tela */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  }
+  
+
+
+
+
+
+  #projects {
+    position: relative; /* Necessário para animações */
+    padding: 10px; /* Espaçamento interno */
+    margin: 20px auto; /* Espaçamento externo */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #2c2c2c; /* Fundo escuro */
+    
+    border-radius: 10px; /* Bordas arredondadas */
+   
+  }
+  
+
+
+  
+  
+
+
+
+@font-face {
+  font-family: 'MinhaFonteHiTech';
+  src: url('./fotns/Faster\ Stroker.otf') format('truetype');
+}
+
+.titulo{
+  font-family: 'MinhaFonteHiTech', sans-serif;
+  font-size: 50px; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Opcional: Deixa o texto mais destacado */
+  color: #ffffff; /* Mantém a cor branca */
+  text-align: center; /* Centraliza o texto */
+  margin: 20px 0; 
+}
+
+.section-title{
+  font-family: 'MinhaFonteHiTech', sans-serif;
+
+}
+#about{
+  background-color: #0A0404;
+  
+  color: #000000; /* Texto branco */
+  padding: 40px;
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+
+}
+
+#resume{
+
+  background-color: #2c2c2c;
+  
+  color: white; /* Texto branco */
+  padding: 40px;
+  
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+#contact{
+  background-color: #2c2c2c;
+  
+  color: white; /* Texto branco */
+  padding: 40px;
+  
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+
+}
+
+#home {
+  background: url('/public/images/imagemfundo.JPG') center/cover no-repeat, #2c2c2c;
+  background-color: #2c2c2c;
+  color: white; /* Texto branco */
+  display: flex; /* Ativa o Flexbox */
+  flex-direction: column; /* Posiciona o conteúdo em uma coluna */
+  justify-content: flex-start; /* Posiciona o conteúdo no início */
+  align-items: center; /* Centraliza horizontalmente */
+  padding-top: 150px; /* Empurra o conteúdo para baixo */
+  margin: 0px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 4); /* Sombra para destaque */
+  min-height: 600px; /* Define uma altura mínima */
+  overflow: hidden;
+  width: 100%;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Usa o mesmo fundo da seção */
+  filter: blur(1500px); /* Aumente o valor para mais desfoque */
+  z-index: -1; /* Fica atrás do conteúdo */
+  border-radius: inherit; /* Mantém o mesmo formato arredondado */
+}
+
+/* Ícones na Home */
+
+.icons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  gap: 30px; /* Espaçamento entre os ícones */
+}
+
+.icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  position: relative; /* Necessário para o popup */
+  transition: transform 0.2s, color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #4CAF50;
+}
+
+/* Email Popup */
+.email-popup {
+  
+  position: absolute;
+  top: -60px; /* Ajuste para alinhar acima do ícone */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333; /* Fundo do popup */
+  color: white; /* Texto branco */
+  padding: 5px 35px; /* Reduz o espaço interno */
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  display: flex;
+  align-items: center; /* Centraliza o texto e o ícone verticalmente */
+  justify-content: center; /* Espaça o texto e o ícone */
+  gap: 5px; /* Espaço entre o email e o ícone */
+  width: 200px; /* Reduz a largura */
+  font-size: 14px; /* Ajusta o tamanho da fonte */
+  animation: slide-down 0.3s ease-out; /* Animação de entrada */
+  text-align: left;
+}
+
+/* Ícone de Copiar */
+.copy-icon {
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.copy-icon:hover {
+  color: #4CAF50; /* Cor ao passar o mouse */
+}
+
+/* Animação */
+@keyframes slide-down {
+  from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* Botão para Expandir/Colapsar a Sidebar */
+/* Botão para Expandir/Colapsar a Sidebar */
+.toggle-sidebar {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1100; /* Fica acima da sidebar */
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-sidebar:hover {
+  background-color: #4CAF50;
+}
+
+/* Sidebar Aberta */
+.sidebar.open {
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+/* Sidebar Colapsada */
+.sidebar.collapsed {
+  width: 60px; /* Largura menor */
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed nav ul li a span {
+  display: none; /* Esconde o texto dos links */
+}
+
+.sidebar.collapsed nav ul li a i {
+  font-size: 24px; /* Ícones maiores na sidebar colapsada */
+}
+
+.content {
+  margin-left: 200px; /* Espaço para a sidebar aberta */
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.collapsed ~ .content {
+  margin-left: 60px; /* Ajuste para a sidebar colapsada */
+}
+
+.sidebar {
+  background-color: #333; /* Cor de fundo da sidebar */
+  color: white;
+  height: 100vh; /* Altura total da tela */
+  position: fixed; /* Sidebar fixa */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px; /* Dá espaço para o botão de colapsar */
+  z-index: 1000;
+}
+
+/* carrossel*/
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  
+  margin: 0 auto; /* Centraliza o carrossel */
+  padding: 20px;
+  background-color: #2c2c2c; /* Fundo escuro */
+  color: white; /* Texto branco */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-card {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.carousel-card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-button.prev {
+  left: -50px; /* Posiciona à esquerda */
+}
+
+.carousel-button.next {
+  right: -50px; /* Posiciona à direita */
+}
+
+.carousel-button:hover {
+  background-color: #4CAF50; /* Cor de destaque ao passar o mouse */
+}
+
+
+
+/* Seção de Currículo */
+.resume-section {
+  padding: 40px;
+  background-color: #2c2c2c; /* Fundo escuro */
+  color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-intro {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Experiências */
+.resume-experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.experience-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Habilidades Técnicas */
+.resume-skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.resume-skills li {
+  background-color: #444;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* Formação Acadêmica */
+.resume-education {
+  margin-bottom: 30px;
+}
+
+.resume-education p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Botão de Download */
+.download-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+
+.experience-card {
+  background-color: #333; /* Fundo escuro */
+  color: white; /* Texto branco */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
+  margin-bottom: 20px; /* Espaço entre os cartões */
+}
+
+.experience-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.experience-card span {
+  font-size: 14px;
+  color: #aaa; /* Cor para os textos adicionais */
+  display: block;
+  margin-bottom: 10px;
+}
+
+.experience-details {
+  list-style-type: disc; /* Marcadores padrão */
+  padding-left: 20px; /* Espaçamento para os marcadores */
+  margin: 0; /* Remove margens extras */
+}
+
+.experience-details li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+  line-height: 1.6; /* Altura das linhas para melhor legibilidade */
+  font-size: 16px; /* Ajusta o tamanho do texto */
+  text-align: justify; /* Justifica o texto para melhor alinhamento */
+}
+
+.experience-details li strong {
+  font-weight: bold; /* Destaca o título */
+  color: #fff; /* Cor do texto mais forte */
+}
