@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mistermaques/site-pessoal.git/static/css/main.2d5d85d7.css",
+    "main.js": "/mistermaques/site-pessoal.git/static/js/main.5308697d.js",
+    "static/js/488.9bde81ad.chunk.js": "/mistermaques/site-pessoal.git/static/js/488.9bde81ad.chunk.js",
+    "static/media/fa-solid-900.ttf": "/mistermaques/site-pessoal.git/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/mistermaques/site-pessoal.git/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/mistermaques/site-pessoal.git/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/mistermaques/site-pessoal.git/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/mistermaques/site-pessoal.git/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/imagemfundo.JPG": "/mistermaques/site-pessoal.git/static/media/imagemfundo.7a36bb938cf3091d8635.JPG",
+    "static/media/Faster Stroker.otf": "/mistermaques/site-pessoal.git/static/media/Faster Stroker.18236cc3603a62dc0613.otf",
+    "static/media/fa-regular-400.woff2": "/mistermaques/site-pessoal.git/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/mistermaques/site-pessoal.git/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/mistermaques/site-pessoal.git/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/mistermaques/site-pessoal.git/index.html",
+    "main.2d5d85d7.css.map": "/mistermaques/site-pessoal.git/static/css/main.2d5d85d7.css.map",
+    "main.5308697d.js.map": "/mistermaques/site-pessoal.git/static/js/main.5308697d.js.map",
+    "488.9bde81ad.chunk.js.map": "/mistermaques/site-pessoal.git/static/js/488.9bde81ad.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d5d85d7.css",
+    "static/js/main.5308697d.js"
+  ]
+}
