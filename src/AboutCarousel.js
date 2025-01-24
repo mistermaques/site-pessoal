@@ -16,15 +16,15 @@ const AboutCarousel = () => {
         },
         {
             title: "Minha Experiência",
-            content: "Sou estagiário na área de Tecnologia Educacional, onde auxilio na montagem de pequenos robôs e no desenvolvimento de programas simples para professores."
+            content: "Sou estagiário na área de Tecnologia Educacional, atuando na montagem de pequenos robôs e no desenvolvimento de programas para auxiliar professores. Além disso, tenho experiência em suporte técnico, organização de cursos e na área de Logística. "
         },
         {
             title: "Hobbies e Interesses",
-            content: "Além da tecnologia, adoro explorar novidades, aprender coisas novas e também gosto de [inserir hobby]."
+            content: "Sou apaixonado por carros e gosto de participar de encontros e eventos automotivos. Além disso, curto explorar novidades tecnologicas e aprender coisas novas. Adoro ler livros, especialmente de ficção científica e aventura, assistir filmes, séries e lives IRL. Também gosto de jogar videogames no meu tempo livre."
         },
         {
             title: "Objetivos Futuros",
-            content: "Meu objetivo é me especializar em [área específica] e trabalhar em projetos que causem impacto positivo no mundo."
+            content: "Meu objetivo é me especializar na idealização e desenvolvimento de projetos tecnológicos, resolvendo problemas por meio de soluções inovadoras e trabalhando em iniciativas que gerem um impacto positivo no mundo."
         }
     ];
 

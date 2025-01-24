@@ -3,6 +3,7 @@ import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import AboutCarousel from './AboutCarousel';
 import Resume from './Resume';
+import Projeto from './projeto';
 
 const App = () => {
   // Estado para controlar o popup de email
@@ -118,10 +119,7 @@ const App = () => {
           <Resume />
         </div>  
         <section id="projects">
-          <h2>Meus Projetos</h2>
-          <p>Lista de projetos ou trabalhos realizados.</p>
-          <p>tela de login usando banco de dados</p>
-          <p>tentar linkar os projetos em C#, ou um video do funcionamto </p>
+        <Projeto />
         </section>
         <section id="contact">
           <h2>Contato</h2>
