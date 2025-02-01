@@ -1,0 +1,126 @@
+/* Sidebar */
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+}
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .sidebar nav ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #4CAF50; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento */
+  }
+  
+  .sidebar nav ul li a i {
+    font-size: 20px; /* Tamanho do ícone */
+  }
+  
+  .sidebar nav ul li a.active {
+    background-color: #4CAF50; /* Cor de fundo para o item ativo */
+    transform: scale(1.05); /* Realce */
+  }
+  .sidebar nav ul li a {
+    transition: all 0.3s ease-in-out;
+  }
+/* Botão para Expandir/Colapsar a Sidebar */
+/* Botão para Expandir/Colapsar a Sidebar */
+.toggle-sidebar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1100; /* Fica acima da sidebar */
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-sidebar:hover {
+    background-color: #4CAF50;
+  }
+  
+  /* Sidebar Aberta */
+  .sidebar.open {
+    width: 200px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Sidebar Colapsada */
+  .sidebar.collapsed {
+    width: 60px; /* Largura menor */
+    transition: width 0.3s ease;
+  }
+  
+  .sidebar.collapsed nav ul li a span {
+    display: none; /* Esconde o texto dos links */
+  }
+  
+  .sidebar.collapsed nav ul li a i {
+    font-size: 24px; /* Ícones maiores na sidebar colapsada */
+  }
+  
+  .content {
+    margin-left: 200px; /* Espaço para a sidebar aberta */
+    transition: margin-left 0.3s ease;
+  }
+  
+  .sidebar.collapsed ~ .content {
+    margin-left: 60px; /* Ajuste para a sidebar colapsada */
+  }
+  
+  .sidebar {
+    background-color: #333; /* Cor de fundo da sidebar */
+    color: white;
+    height: 100vh; /* Altura total da tela */
+    position: fixed; /* Sidebar fixa */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* Dá espaço para o botão de colapsar */
+    z-index: 1000;
+  }
+
+  .content {
+    margin-left: 200px; /* Quando a sidebar está aberta */
+    transition: margin-left 0.3s ease-in-out;
+    width: calc(100% - 200px);
+}
+  

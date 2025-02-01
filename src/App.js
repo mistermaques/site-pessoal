@@ -1,82 +1,33 @@
 import React, { useState } from 'react';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import AboutCarousel from './AboutCarousel';
-import Resume from './Resume';
-import Projeto from './projeto';
+import AboutCarousel from './componentes/AboutCarousel';
+import Resume from './componentes/Resume';
+import Projeto from './componentes/projeto';
+import Sidebar from './componentes/Sidebar';
 
 const App = () => {
-  // Estado para controlar o popup de email
   const [showEmail, setShowEmail] = useState(false);
-
-
-
-  // Estado para controlar a sidebar
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
-  // Função para alternar o estado da sidebar
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  // Função para copiar o email
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("gabrielmarques.sp@hotmail.com");
     alert("Email copiado para a área de transferência!");
   };
 
   return (
-    <div className="app">
-      {/* Botão para Expandir/Colapsar a Sidebar */}
-      <button className="toggle-sidebar" onClick={toggleSidebar}>
-        ☰
-      </button>
+    <div className={`app ${!sidebarOpen ? "sidebar-collapsed" : ""}`}>
+      <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
 
-      {/* Sidebar */}
-      <aside className={`sidebar ${sidebarOpen ? 'collapsed' : 'open'}`}>
-        <nav>
-          <ul>
-            <li>
-              <a href="#home">
-                <i className="fas fa-home"></i>
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#about">
-                <i className="fas fa-user"></i>
-                <span>Sobre Mim</span>
-              </a>
-            </li>
-            <li>
-              <a href="#resume">
-                <i className="fas fa-file-alt"></i>
-                <span>Meu Currículo</span>
-              </a>
-            </li>
-            <li>
-              <a href="#projects">
-                <i className="fas fa-project-diagram"></i>
-                <span>Meus Projetos</span>
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                <i className="fas fa-envelope"></i>
-                <span>Contato</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-      {/* Conteúdo Principal */}
       <main className="content">
         {/* Seção Home */}
         <section id="home">
-          <h1 className='titulo'>Gabriel Marques</h1>
+          <h1 className="titulo">Gabriel Marques</h1>
           <p>Explore e conheça mais sobre mim!</p>
-
           {/* Ícones */}
           <div className="icons-container">
             {/* Ícone do LinkedIn */}
@@ -107,20 +58,22 @@ const App = () => {
           </div>
         </section>
 
-        {/* Outras Seções */}
-        <div className="app">
-          {/* Outras seções */}
-          <section id="about">
-            <AboutCarousel />
-          </section>
-        </div>
-        <div>
-          {/* Outras seções */}
-          <Resume />
-        </div>  
-        <section id="projects">
-        <Projeto />
+        {/* Seção Sobre Mim */}
+        <section id="about">
+          <AboutCarousel />
         </section>
+
+        {/* Seção Currículo */}
+        <section id="resume">
+          <Resume />
+        </section>
+
+        {/* Seção Projetos */}
+        <section id="projects">
+          <Projeto />
+        </section>
+
+        {/* Seção Contato */}
         <section id="contact">
           <h2>Contato</h2>
           <p>Informações de contato e formulário para mensagens.</p>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 
 const Resume = () => {
     return (
@@ -84,7 +84,7 @@ const Resume = () => {
                 <h3>Formação Acadêmica</h3>
                 <p>
                     Graduação em Sistemas de Informação - 5º Semestre <br />
-                    Faculdade [Nome da Instituição]
+                    Faculdade Rio Branco
                 </p>
             </div>
 
